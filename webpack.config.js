@@ -36,6 +36,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         assetModuleFilename: 'images/[hash][ext][query]'
     },
+    target: process.env.NODE_ENV === 'development' ? 'web' : 'browserslist',
     mode: 'development',
     resolve: {
         extensions: ['.js'],
@@ -47,7 +48,8 @@ module.exports = {
     devtool: isDev ? 'source-map' : false,
     devServer: {
         port: 4200,
-        open: true
+        open: true,
+        hot: isDev
     },
     plugins: [
         new HtmlWebpackPlugin({
