@@ -1,0 +1,46 @@
+@import "variables";
+@import "mixins";
+
+.yandex-notes {
+  &__content {
+    display: grid;
+    grid-template-columns: 320px auto;
+    background: #ffffff;
+    height: 600px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
+  }
+
+  &__list-items {
+    border-right: 1px solid #e4e4e4;
+
+    &_item {
+      border-bottom: 1px solid #e4e4e4;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+    &_title {
+      margin-left: 20px;
+      font-size: 20px;
+    }
+  }
+
+  &__create-note {
+    display: grid;
+    grid-template: 60px 1fr / 1fr 1fr;
+    padding: 0 20px;
+    &_toolbar {
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 28px;
+        margin-right: 5px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

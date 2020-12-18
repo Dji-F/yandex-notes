@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "~normalize.css";
+
+@import "header";
+@import "notes";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f8f8f8;
+}
+
+.material-icons {
+  cursor: pointer;
+}
+
+.yandex-notes {
+  display: grid;
+  grid-template-rows: $heightFH auto $heightFH;
+  max-width: 1400px;
+  width: 96%;
+  margin: 0 auto;
+}

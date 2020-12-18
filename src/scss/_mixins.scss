@@ -1,0 +1,11 @@
+@mixin icons($color: green) {
+
+  &:active {
+    color: $color;
+  }
+
+  &:hover {
+    color: #eeeeee;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,15 @@
+@import "variables";
+@import "mixins";
+
+.yandex-notes__header {
+  display: flex;
+  justify-content: space-between;
+
+  h1>span {
+    color: #ff0000;
+  }
+
+  .material-icons {
+    font-size: 78px;
+  }
+}
